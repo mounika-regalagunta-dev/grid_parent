@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: rgb(18, 1, 1);
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .item {
+            background-color: silver;
+            grid-row: 1/150;
+            font-size: 10vh;
+        }
+
+        .item2 {
+            grid-row: 1/75;
+            background-color: silver;
+            font-size: 10vh;
+        }
+
+        .item3 {
+            grid-row: 75/150;
+            background-color: silver;
+            font-size: 10vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+    </div>
+</body>
+
+</html>
